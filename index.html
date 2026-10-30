@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento de Setup Home Office</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Orçamento de Setup Home Office</h1>
+
+    <div class="content-grid">
+      <!-- Tabela de Dados -->
+      <section class="table-container">
+        <table id="budget-table">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Preço Unitário</th>
+              <th>Quantidade</th>
+              <th>Valor Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Preenchido dinamicamente via JS -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" class="total-label">Total</td>
+              <td id="grand-total">R$ 0,00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Gráfico -->
+      <section class="chart-container">
+        <h2>Distribuição de Custos</h2>
+        <canvas id="expensesChart"></canvas>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
